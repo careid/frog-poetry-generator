@@ -1,34 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <div className="poem-container">
+      <h1>The Frog's Song</h1>
+      <div className="poem">
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Upon a lily pad so green,<br />
+          A frog sits, rarely to be seen.<br />
+          He croaks his song into the night,<br />
+          While fireflies dance in soft moonlight.
+        </p>
+        <p>
+          Splash and jump from pad to pad,<br />
+          The happiest life a frog has had.<br />
+          In peaceful pond he makes his home,<br />
+          Content to never have to roam.
+        </p>
+        <p>
+          Ribbit, ribbit, through the day,<br />
+          Catching flies that come his way.<br />
+          Nature's song he helps compose,<br />
+          As evening gently dims to close.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
